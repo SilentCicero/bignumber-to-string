@@ -1,0 +1,30 @@
+{
+  "name": "bignumber-to-string",
+  "version": "0.1.0",
+  "description": "A tiny module to convert object or array nested BigNumbers to strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/silentcicero/bignumber-to-string.git"
+  },
+  "keywords": [
+    "bignumber",
+    "to",
+    "string",
+    "bn",
+    "ethereum"
+  ],
+  "author": "= <=>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/silentcicero/bignumber-to-string/issues"
+  },
+  "homepage": "https://github.com/silentcicero/bignumber-to-string#readme",
+  "devDependencies": {
+    "bignumber.js": "^2.3.0",
+    "tape": "^4.5.1"
+  }
+}
