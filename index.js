@@ -1,7 +1,7 @@
 // setup main method
 function bigNumberToString (obj, base) {
   // setup base
-  base = typeof base === 'undefined' && 10 || base
+  base = base || 10
 
   // check if obj is type object, not an array and does not have BN properties
   if (typeof obj === 'object' && !Array.isArray(obj) && !('lessThan' in obj)) {

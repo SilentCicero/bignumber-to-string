@@ -2,11 +2,17 @@
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
-A tiny module to convert nested objects or arrays containing BigNumbers to strings
+A tiny module to convert BigNumbers to strings that are nested within objects or arrays
 
 ```
 npm install bignumber-to-string
 ```
+
+## Use
+
+BigNumbers are used in various applications, however, most do not want to store
+the complex BigNumber object itself in their state or DB. Converting the BigNumber
+to a string keeps data precision while being easier to store.
 
 ## Example
 
@@ -35,12 +41,6 @@ returns:
 }
 */
 ```
-
-## Use
-
-BigNumbers are used in various applications, however, most do not want to store
-the complex BigNumber object itself in their state or DB. Converting the BigNumber
-to a string keeps data precision while being easier to store.
 
 ## API
 
