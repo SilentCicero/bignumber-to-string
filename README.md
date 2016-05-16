@@ -36,6 +36,25 @@ returns:
 */
 ```
 
+## Use
+
+BigNumbers are used in various applications, however, most do not want to store
+the complex BigNumber object itself in their state or DB. Converting the BigNumber
+to a string keeps data precision while being easier to store.
+
+## API
+
+### (1) bigNumberToString
+
+Converts any BigNumber objects to a string while bypassing everything else
+
+**Parameters**
+
+-   `obj` **Object|Array|String|Boolean|Function** input data
+-   `base` **Number** base integer for string conversion
+
+Returns **Variable** if BigNumber, returns string, else returns what ever input type with BigNumbers converted to strings
+
 ## Tests
 
 ```

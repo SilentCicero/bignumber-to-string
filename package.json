@@ -1,6 +1,6 @@
 {
   "name": "bignumber-to-string",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "A tiny module to convert object or array nested BigNumbers to strings",
   "main": "index.js",
   "scripts": {
