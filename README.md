@@ -1,10 +1,12 @@
 # bignumber-to-string
 
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+
+A tiny module to convert nested objects or arrays containing BigNumbers to strings
+
 ```
 npm install bignumber-to-string
 ```
-
-A tiny module to convert nested objects or arrays containing BigNumbers to strings
 
 ## Example
 
