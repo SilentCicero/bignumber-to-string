@@ -4,7 +4,7 @@ function bigNumberToString (obj, base) {
   base = base || 10
 
   // check if obj is type object, not an array and does not have BN properties
-  if (typeof obj === 'object' && !Array.isArray(obj) && !('lessThan' in obj)) {
+  if (typeof obj === 'object' && obj !== null && !Array.isArray(obj) && !('lessThan' in obj)) {
     // move through plain object
     Object.keys(obj).forEach(function (key) {
       // recurively converty item
@@ -22,7 +22,7 @@ function bigNumberToString (obj, base) {
   }
 
   // if not an object bypass
-  if (typeof obj !== 'object') return obj
+  if (typeof obj !== 'object' || obj === null) return obj
 
   // if the object to does not have BigNumber properties, bypass
   if (!('toString' in obj) || !('lessThan' in obj)) return obj

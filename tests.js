@@ -5,7 +5,7 @@ const bigNumberToString = require('./index')
 test('test array of bignumbers', function (t) {
   t.plan(2)
 
-  const arr = [100, 'sdfsfds', [], [[]], new BigNumber(100), 22]
+  const arr = [100, 'sdfsfds', [], [[]], new BigNumber(100), null, 22]
   const newArr = bigNumberToString(arr)
 
   t.deepEqual(typeof newArr[4], 'string')
